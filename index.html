@@ -19,9 +19,11 @@
     <div class="nav__inner">
       <a class="nav__brand" href="#top">Il tuo Nome</a>
 
-      <!-- ✅ SOLO ABOUT finché le altre sezioni sono commentate -->
       <nav class="nav__links" aria-label="Navigazione">
         <a href="#about">About me</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#publications">Publications</a>
+        <a href="#topics">Research Topics</a>
       </nav>
 
       <button class="nav__toggle" id="themeToggle" aria-label="Cambia tema">🌙</button>
@@ -101,6 +103,7 @@
           <div class="block">
             <h2 class="block__title">Education</h2>
 
+            <!-- Icone stile reference (graduation cap) -->
             <ul class="timeline">
               <li class="timeline__item">
                 <div class="timeline__icon" aria-hidden="true">
@@ -135,25 +138,16 @@
           </div>
         </div>
 
-        <!-- ✅ Footer qui, così resta anche se le altre sezioni sono commentate -->
-        <footer class="footer">
-          <span>© <span id="year"></span> Il tuo Nome</span>
-        </footer>
-
       </div>
     </section>
 
-    <!-- =========================================================
-         SEZIONI TEMPORANEAMENTE NASCOSTE (da riattivare più avanti)
-         ========================================================= -->
-
-    <!--
-    <section id="teaching" class="row row--band">
-      <div class="left section-head">
-        <h2 class="section-title">Teaching</h2>
-      </div>
+    <!-- TEACHING (colonna sinistra VUOTA, colonna destra con contenuto) -->
+    <!-- <section id="teaching" class="row row--band">
+      <div class="left spacer" aria-hidden="true"></div>
 
       <div class="right">
+        <h2 class="section-title">Teaching</h2>
+
         <div class="prose">
           <p>
             Inserisci qui una descrizione breve (come nel reference) e poi un elenco puntato.
@@ -171,11 +165,46 @@
         </ul>
 
         <div class="prose">
-          <p>In 2021, I obtained my Basic Teaching Qualification (UTQ).</p>
+          <p>
+            In 2021, I obtained my Basic Teaching Qualification (UTQ).
+          </p>
         </div>
       </div>
+    </section> -->
+
+
+    <section id="teaching" class="row row--band">
+    <div class="left section-head">
+        <h2 class="section-title">Teaching</h2>
+    </div>
+
+    <div class="right">
+        <div class="prose">
+        <p>
+            Inserisci qui una descrizione breve (come nel reference) e poi un elenco puntato.
+        </p>
+        </div>
+
+        <ul class="bullet">
+        <li>Development, implementation, and evaluation of interventions</li>
+        <li>Health promotion</li>
+        <li>Behaviour (change) theories</li>
+        <li>Self-regulation</li>
+        <li>Research methods</li>
+        <li>Anxiety disorders</li>
+        <li>Thesis supervision</li>
+        </ul>
+
+        <div class="prose">
+        <p>
+            In 2021, I obtained my Basic Teaching Qualification (UTQ).
+        </p>
+        </div>
+    </div>
     </section>
 
+
+    <!-- EXPERIENCE (colonna sinistra VUOTA, contenuto a destra) -->
     <section id="experience" class="row">
       <div class="left spacer" aria-hidden="true"></div>
 
@@ -208,6 +237,7 @@
       </div>
     </section>
 
+    <!-- PUBLICATIONS (colonna sinistra VUOTA, contenuto a destra) -->
     <section id="publications" class="row">
       <div class="left spacer" aria-hidden="true"></div>
 
@@ -227,6 +257,7 @@
       </div>
     </section>
 
+    <!-- TOPICS (colonna sinistra VUOTA, contenuto a destra) -->
     <section id="topics" class="row">
       <div class="left spacer" aria-hidden="true"></div>
 
@@ -237,12 +268,16 @@
           <a class="chip chip--link" href="#publications" data-scroll-tag="topic-b">Topic B</a>
           <a class="chip chip--link" href="#publications" data-scroll-tag="methods">Methods</a>
         </div>
+
+        <footer class="footer">
+          <span>© <span id="year"></span> Il tuo Nome</span>
+        </footer>
       </div>
     </section>
-    -->
 
   </main>
 
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+
