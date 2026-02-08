@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Il tuo Nome — Sito</title>
+  <meta name="description" content="Sito personale: bio, teaching, pubblicazioni, topics." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Font più “simile reference”: leggero e pulito -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top">Il tuo Nome</a>
+
+      <!-- ✅ SOLO ABOUT finché le altre sezioni sono commentate -->
+      <nav class="nav__links" aria-label="Navigazione">
+        <a href="#about">About me</a>
+      </nav>
+
+      <button class="nav__toggle" id="themeToggle" aria-label="Cambia tema">🌙</button>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+
+    <!-- ABOUT (profilo a sinistra, contenuto a destra) -->
+    <section id="about" class="row row--first">
+      <aside class="left" aria-label="Profilo">
+        <img class="sidebar__avatar" src="assets/img/profile.jpg" alt="Foto profilo" />
+
+        <div class="sidebar__name">Il tuo Nome Cognome</div>
+        <div class="sidebar__role">Ruolo / Area</div>
+
+        <a class="sidebar__affiliation" href="#" target="_blank" rel="noopener">
+          Affiliazione / Università
+        </a>
+
+        <!-- Icone “carine” stile reference (blu piene) -->
+        <div class="sidebar__icons" aria-label="Link rapidi">
+          <a class="icon-btn" href="mailto:tua@email.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/>
+            </svg>
+          </a>
+
+          <a class="icon-btn" href="https://scholar.google.com" target="_blank" rel="noopener" aria-label="Google Scholar">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm-7 9.09V16c0 1.66 3.13 3 7 3s7-1.34 7-3v-3.91l-7 3.82-7-3.82Z"/>
+            </svg>
+          </a>
+
+          <a class="icon-btn" href="https://www.linkedin.com/in/tuoUser" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.5 23.5h4V7.98h-4V23.5ZM8.5 7.98h3.83v2.12h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.09v9.37h-4v-8.31c0-1.98-.04-4.53-2.76-4.53-2.76 0-3.18 2.16-3.18 4.39v8.45h-4V7.98Z"/>
+            </svg>
+          </a>
+        </div>
+
+        <a class="sidebar__cv" href="assets/cv.pdf" target="_blank" rel="noopener">Download CV</a>
+      </aside>
+
+      <div class="right">
+        <h1 class="page-title">About me</h1>
+
+        <div class="prose">
+          <p>
+            Scrivi qui un primo paragrafo “editoriale” (2–4 frasi) che spiega chi sei e cosa fai.
+            Puoi inserire link discreti dentro il testo, come nel reference.
+          </p>
+
+          <p>
+            Secondo paragrafo: focus di ricerca, metodi, temi, e cosa ti interessa studiare.
+            Manteniamo la larghezza controllata per un effetto “pagina” pulito.
+          </p>
+
+          <p>
+            Terzo paragrafo (opzionale): percorso, attività, community, ecc.
+          </p>
+        </div>
+
+        <!-- Interests + Education (come nel reference) -->
+        <div class="two-grid">
+          <div class="block">
+            <h2 class="block__title">Interests</h2>
+            <ul class="bullet">
+              <li>Behaviour Change</li>
+              <li>Informed Decision Making</li>
+              <li>Health Promotion</li>
+              <li>Digital Health & Interventions</li>
+              <li>Diversity, Inclusion & Inclusive Methods</li>
+            </ul>
+          </div>
+
+          <div class="block">
+            <h2 class="block__title">Education</h2>
+
+            <ul class="timeline">
+              <li class="timeline__item">
+                <div class="timeline__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm-7 9.09V16c0 1.66 3.13 3 7 3s7-1.34 7-3v-3.91l-7 3.82-7-3.82Z"/></svg>
+                </div>
+                <div class="timeline__body">
+                  <div class="timeline__title">PhD in …, 2022</div>
+                  <div class="timeline__meta">Maastricht University</div>
+                </div>
+              </li>
+
+              <li class="timeline__item">
+                <div class="timeline__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm-7 9.09V16c0 1.66 3.13 3 7 3s7-1.34 7-3v-3.91l-7 3.82-7-3.82Z"/></svg>
+                </div>
+                <div class="timeline__body">
+                  <div class="timeline__title">MSc in …, 2017</div>
+                  <div class="timeline__meta">Maastricht University</div>
+                </div>
+              </li>
+
+              <li class="timeline__item">
+                <div class="timeline__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm-7 9.09V16c0 1.66 3.13 3 7 3s7-1.34 7-3v-3.91l-7 3.82-7-3.82Z"/></svg>
+                </div>
+                <div class="timeline__body">
+                  <div class="timeline__title">BSc in …, 2014</div>
+                  <div class="timeline__meta">Catholic University …</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ✅ Footer qui, così resta anche se le altre sezioni sono commentate -->
+        <footer class="footer">
+          <span>© <span id="year"></span> Il tuo Nome</span>
+        </footer>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEZIONI TEMPORANEAMENTE NASCOSTE (da riattivare più avanti)
+         ========================================================= -->
+
+    <!--
+    <section id="teaching" class="row row--band">
+      <div class="left section-head">
+        <h2 class="section-title">Teaching</h2>
+      </div>
+
+      <div class="right">
+        <div class="prose">
+          <p>
+            Inserisci qui una descrizione breve (come nel reference) e poi un elenco puntato.
+          </p>
+        </div>
+
+        <ul class="bullet">
+          <li>Development, implementation, and evaluation of interventions</li>
+          <li>Health promotion</li>
+          <li>Behaviour (change) theories</li>
+          <li>Self-regulation</li>
+          <li>Research methods</li>
+          <li>Anxiety disorders</li>
+          <li>Thesis supervision</li>
+        </ul>
+
+        <div class="prose">
+          <p>In 2021, I obtained my Basic Teaching Qualification (UTQ).</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="row">
+      <div class="left spacer" aria-hidden="true"></div>
+
+      <div class="right">
+        <h2 class="section-title">Experience</h2>
+
+        <ul class="timeline timeline--big">
+          <li class="timeline__item">
+            <div class="timeline__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M10 2h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v3H0V8a2 2 0 0 1 2-2h4V4a2 2 0 0 1 2-2Zm4 4V4h-4v2h4ZM0 13h10v2H0v-2Zm12 0h12v2H12v-2Zm-12 4h24v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-3Z"/></svg>
+            </div>
+            <div class="timeline__body">
+              <div class="timeline__title">Ruolo / Posizione — 2025–Present</div>
+              <div class="timeline__meta">Ente / Lab / Azienda</div>
+              <div class="timeline__desc">1–2 frasi su cosa fai.</div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M10 2h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v3H0V8a2 2 0 0 1 2-2h4V4a2 2 0 0 1 2-2Zm4 4V4h-4v2h4ZM0 13h10v2H0v-2Zm12 0h12v2H12v-2Zm-12 4h24v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-3Z"/></svg>
+            </div>
+            <div class="timeline__body">
+              <div class="timeline__title">Ruolo / Posizione — 2023–2025</div>
+              <div class="timeline__meta">Ente / Lab / Azienda</div>
+              <div class="timeline__desc">1 frase breve.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="publications" class="row">
+      <div class="left spacer" aria-hidden="true"></div>
+
+      <div class="right">
+        <div class="section__head">
+          <h2 class="section-title">Publications</h2>
+
+          <div class="filters" aria-label="Filtri pubblicazioni">
+            <button class="chip is-active" data-tag="all" type="button">All</button>
+            <button class="chip" data-tag="topic-a" type="button">Topic A</button>
+            <button class="chip" data-tag="topic-b" type="button">Topic B</button>
+            <button class="chip" data-tag="methods" type="button">Methods</button>
+          </div>
+        </div>
+
+        <div id="pubList" class="cards"></div>
+      </div>
+    </section>
+
+    <section id="topics" class="row">
+      <div class="left spacer" aria-hidden="true"></div>
+
+      <div class="right">
+        <h2 class="section-title">Research Topics</h2>
+        <div class="chips">
+          <a class="chip chip--link" href="#publications" data-scroll-tag="topic-a">Topic A</a>
+          <a class="chip chip--link" href="#publications" data-scroll-tag="topic-b">Topic B</a>
+          <a class="chip chip--link" href="#publications" data-scroll-tag="methods">Methods</a>
+        </div>
+      </div>
+    </section>
+    -->
+
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
