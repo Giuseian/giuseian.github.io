@@ -27,6 +27,28 @@ const chips = Array.from(document.querySelectorAll(".filters .chip"));
 
 if (year) year.textContent = new Date().getFullYear();
 
+
+const navLinks = Array.from(document.querySelectorAll('.nav__links a[href^="#"]'));
+const sections = navLinks
+  .map(a => document.querySelector(a.getAttribute("href")))
+  .filter(Boolean);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const id = entry.target.getAttribute("id");
+    const link = document.querySelector(`.nav__links a[href="#${id}"]`);
+    if (!link) return;
+
+    if (entry.isIntersecting) {
+      navLinks.forEach(a => a.classList.remove("is-active"));
+      link.classList.add("is-active");
+    }
+  });
+}, { rootMargin: "-45% 0px -50% 0px", threshold: 0.01 });
+
+sections.forEach(sec => observer.observe(sec));
+
+
 function setTheme(theme) {
   root.setAttribute("data-theme", theme);
   localStorage.setItem("theme", theme);
