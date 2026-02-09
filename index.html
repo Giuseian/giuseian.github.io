@@ -22,7 +22,7 @@
         <a href="#about">About</a>
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
-        <a href="#theses">Thesis Projects</a>
+        <a href="#theses">Thesis Work</a>
         <a href="#projects">Selected Projects</a>
         <a href="assets/utils/cv.pdf" target="_blank" rel="noopener">CV</a>
         </nav>
@@ -326,7 +326,7 @@
 
     <section id="theses" class="row row--band">
     <div class="left section-head">
-        <h2 class="section-title">Theses<br>Projects</h2>
+        <h2 class="section-title">Thesis<br>Work</h2>
     </div>
 
 
@@ -339,19 +339,16 @@
             Master’s Thesis — <em>Learning Distance Functions for Robot Obstacle Avoidance</em>
             </h3>
 
-            <p class="proj-desc">
-            Data-driven learning of distance representations for robot obstacle avoidance,
-            comparing neural and geometric approaches and motivated by applications in
-            mobile manipulation scenarios.
-            </p>
-
             <div class="proj-meta">
-            Sapienza University of Rome × Leonardo S.p.A. <br>
-            Apr 2025 – Oct 2025
+            Sapienza University of Rome × Robotics Lab, Leonardo S.p.A. <br>
             </div>
 
+            <p class="proj-desc">
+            This thesis investigates data-driven distance representations for robot obstacle avoidance in mobile manipulation. A geometric dataset is first constructed by sampling collision-free robot configurations and corresponding workspace obstacle points, from which exact distance values are computed. These distances are then approximated through neural models, enabling smooth and differentiable distance functions. The learned representations are designed to support gradient-based control, with the long-term goal of integrating distance constraints into quadratic programming formulations for real-time motion generation of mobile base manipulators.
+            </p>
+
             <div class="proj-actions">
-            <a class="proj-btn" href="#" target="_blank" rel="noopener">Thesis PDF</a>
+            <a class="proj-btn" href="assets/utils/thesis_iannotti.pdf" target="_blank" rel="noopener">Slides</a>
             </div>
 
             <div class="proj-tags">
@@ -359,6 +356,7 @@
             <span class="ptag">Obstacle Avoidance</span>
             <span class="ptag">Neural Distance Fields</span>
             <span class="ptag">Mobile Manipulation</span>
+            <span class="ptag">Gradient-Based Control</span>
             </div>
         </article>
 
@@ -367,26 +365,27 @@
             <h3 class="proj-title">
             Bachelor’s Thesis — <em>Unmasking Deception: A Deep Learning Approach with Attention Mechanisms</em>
             </h3>
-
-            <p class="proj-desc">
-            Deep learning framework for deception detection based on attention mechanisms,
-            applied to multimodal behavioral data and evaluated on benchmark datasets.
-            </p>
-
+            
             <div class="proj-meta">
-            Computer Vision Laboratory, Sapienza University of Rome <br>
-            Jun 2023 – Oct 2023
+            VisionLab, Sapienza University of Rome <br>
             </div>
 
-            <div class="proj-actions">
-            <a class="proj-btn" href="#" target="_blank" rel="noopener">Thesis PDF</a>
+            <p class="proj-desc">
+            This thesis investigates deception detection from facial micro-expressions using a deep learning approach.
+            A unimodal architecture combining an autoencoder for temporal sequence reconstruction and an attention-based classifier is introduced to identify salient facial dynamics associated with deceptive behavior.
+            The method is evaluated on a real-life trial dataset of high-stakes interview videos, featuring both truthful and deceptive subjects, with facial features extracted through OpenCV-, Dlib-, and MediaPipe-based pipelines.
+            </p>            
+
+        <div class="proj-actions">
+            <a class="proj-btn" href="assets/utils/bachelor_iannotti.pdf" target="_blank" rel="noopener">Slides</a>
             </div>
 
             <div class="proj-tags">
-            <span class="ptag">Deep Learning</span>
-            <span class="ptag">Attention Models</span>
+            <span class="ptag">Facial Micro-Expressions</span>
+            <span class="ptag">Attention Mechanisms</span>
+            <span class="ptag">Autoencoder-Based Models</span>
             <span class="ptag">Computer Vision</span>
-            <span class="ptag">Multimodal Learning</span>
+            <span class="ptag">Deception Detection</span>
             </div>
         </article>
 
@@ -414,7 +413,7 @@
             ROS1-based assistive robotics system for emotion-aware human–robot interaction. The project integrates real-time multimodal emotion recognition from face, audio, and body pose with semantic scene understanding and knowledge-graph-based symbolic reasoning, enabling adaptive and socially appropriate robot behavior in healthcare and assistive scenarios.
             </p>
             <div class="proj-actions">
-            <a class="proj-btn" href="#" target="_blank" rel="noopener">Code</a>
+            <a class="proj-btn" href="https://github.com/Giuseian/TiagoCare.git" target="_blank" rel="noopener">Code</a>
             <a class="proj-btn"
             href="assets/utils/hri.pdf"
             target="_blank">Report</a>

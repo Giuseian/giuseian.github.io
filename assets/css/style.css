@@ -10,7 +10,7 @@
   --max: 1180px;
   --content-max: 840px;
 
-  --left: 290px;   /* era 320 */
+  --left: 280px;   /* era 320 */
   --gap: 55px;     /* era 70 */
 }
 
@@ -509,6 +509,11 @@ body{
   color: var(--muted);
   font-size: 16px;
   line-height: 1.65;
+}
+
+.proj-desc {
+  padding-left: 4px;
+  border-left: 2px solid var(--border);
 }
 
 .proj-actions{
