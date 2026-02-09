@@ -3,12 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Il tuo Nome — Sito</title>
-  <meta name="description" content="Sito personale: bio, teaching, pubblicazioni, topics." />
+  <title>Giuseppina Iannotti — Personal Website</title>
+  <meta name="description" content="Personal website: bio, teaching, publications, research topics." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Font più “simile reference”: leggero e pulito -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -17,14 +16,14 @@
 <body>
   <header class="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="#top">Il tuo Nome</a>
+      <a class="nav__brand" href="#top">Giuseppina Iannotti</a>
 
-      <nav class="nav__links" aria-label="Navigazione">
-        <a href="#about">About me</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#publications">Publications</a>
-        <a href="#topics">Research Topics</a>
-      </nav>
+        <nav class="nav__links" aria-label="Navigation">
+        <a href="#about">About</a>
+        <a href="#theses">Theses</a>
+        <a href="#projects">Selected Master Projects</a>
+        <a href="assets/utils/cv.pdf" target="_blank" rel="noopener">CV</a>
+        </nav>
 
       <button class="nav__toggle" id="themeToggle" aria-label="Cambia tema">🌙</button>
     </div>
@@ -32,40 +31,46 @@
 
   <main id="top" class="container">
 
-    <!-- ABOUT (profilo a sinistra, contenuto a destra) -->
+    <!-- ABOUT -->
     <section id="about" class="row row--first">
       <aside class="left" aria-label="Profilo">
-        <img class="sidebar__avatar" src="assets/img/profile.jpg" alt="Foto profilo" />
+        <img class="sidebar__avatar" src="assets/utils/profile.jpg" alt="Foto profilo" />
 
-        <div class="sidebar__name">Il tuo Nome Cognome</div>
-        <div class="sidebar__role">Ruolo / Area</div>
+        <div class="sidebar__name">Giuseppina Iannotti</div>
+        <div class="sidebar__role">Ph.D. Student in Robotics and Intelligent Machines</div>
 
-        <a class="sidebar__affiliation" href="#" target="_blank" rel="noopener">
-          Affiliazione / Università
+        <a class="sidebar__affiliation" href="https://www.iit.it/" target="_blank" rel="noopener">
+          Italian Institute of Technology (IIT)
         </a>
 
-        <!-- Icone “carine” stile reference (blu piene) -->
+        <a class="sidebar__affiliation sidebar__affiliation--secondary" href="#" target="_blank" rel="noopener">
+          Humanoids &amp; Human-Centered Mechatronics (HHCM) Lab
+        </a>
+
+        <!-- Icone rapide: email + LinkedIn (senza Scholar) -->
         <div class="sidebar__icons" aria-label="Link rapidi">
-          <a class="icon-btn" href="mailto:tua@email.com" aria-label="Email">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/>
-            </svg>
-          </a>
+            <a class="icon-link" href="mailto:giuseppina.iannotti@iit.it" aria-label="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/>
+                </svg>
+            </a>
 
-          <a class="icon-btn" href="https://scholar.google.com" target="_blank" rel="noopener" aria-label="Google Scholar">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm-7 9.09V16c0 1.66 3.13 3 7 3s7-1.34 7-3v-3.91l-7 3.82-7-3.82Z"/>
-            </svg>
-          </a>
+            <a class="icon-link" href="https://www.linkedin.com/in/giuseppina-iannotti-22331535a" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.5 23.5h4V7.98h-4V23.5ZM8.5 7.98h3.83v2.12h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.09v9.37h-4v-8.31c0-1.98-.04-4.53-2.76-4.53-2.76 0-3.18 2.16-3.18 4.39v8.45h-4V7.98Z"/>
+                </svg>
+            </a>
 
-          <a class="icon-btn" href="https://www.linkedin.com/in/tuoUser" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.5 23.5h4V7.98h-4V23.5ZM8.5 7.98h3.83v2.12h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.09v9.37h-4v-8.31c0-1.98-.04-4.53-2.76-4.53-2.76 0-3.18 2.16-3.18 4.39v8.45h-4V7.98Z"/>
-            </svg>
-          </a>
+            <a class="icon-link" href="https://github.com/Giuseian" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 .5C5.73.5.75 5.65.75 12.02c0 5.16 3.33 9.53 7.94 11.07.58.11.8-.26.8-.57v-2.02c-3.23.72-3.91-1.41-3.91-1.41-.53-1.38-1.29-1.74-1.29-1.74-1.05-.73.08-.72.08-.72 1.16.08 1.77 1.22 1.77 1.22 1.03 1.82 2.7 1.29 3.36.99.1-.77.4-1.29.73-1.58-2.58-.3-5.29-1.32-5.29-5.89 0-1.3.45-2.37 1.19-3.21-.12-.3-.52-1.52.11-3.16 0 0 .97-.32 3.18 1.23a10.7 10.7 0 0 1 2.9-.4c.98 0 1.97.14 2.9.4 2.2-1.55 3.17-1.23 3.17-1.23.63 1.64.23 2.86.11 3.16.74.84 1.19 1.91 1.19 3.21 0 4.58-2.72 5.58-5.31 5.88.41.36.78 1.08.78 2.18v3.24c0 .31.21.69.81.57 4.61-1.54 7.93-5.91 7.93-11.07C23.25 5.65 18.27.5 12 .5Z"/>
+                </svg>
+            </a>
         </div>
 
-        <a class="sidebar__cv" href="assets/cv.pdf" target="_blank" rel="noopener">Download CV</a>
+
+        <!-- Download CV rimosso come richiesto -->
+        <!-- <a class="sidebar__cv" href="assets/cv.pdf" target="_blank" rel="noopener">Download CV</a> -->
       </aside>
 
       <div class="right">
@@ -73,45 +78,61 @@
 
         <div class="prose">
           <p>
-            Scrivi qui un primo paragrafo “editoriale” (2–4 frasi) che spiega chi sei e cosa fai.
-            Puoi inserire link discreti dentro il testo, come nel reference.
+            I am currently a PhD student in <strong>Robotics and Intelligent Machines</strong> at the
+            <a href="https://www.iit.it/" target="_blank" rel="noopener">Italian Institute of Technology (IIT)</a> in Genoa,
+            within the
+            <a href="https://hhcm.iit.it/" target="_blank" rel="noopener"><strong>Humanoids and Human-Centered Mechatronics Lab</strong></a>,
+            under the supervision of
+            <a href="https://www.iit.it/it/people-profile/-/people/nikos-tsagarakis" target="_blank" rel="noopener"><strong>Nikolaos Tsagarakis</strong></a>.
+            <p>
+            My research focuses on <strong>embodied robot autonomy</strong>, aiming to equip
+            <strong>legged and hybrid wheeled–legged systems</strong> with the ability to reason about their
+            environment while acting in it.
+            I investigate how <strong>foundation models</strong> can support <strong>semantic understanding</strong>,
+            <strong>task grounding</strong>, and <strong>action generation</strong>, and how these components can be combined
+            into <strong>robust navigation and manipulation</strong> systems.
+            A central aspect of my work is the integration of <strong>VLMs</strong> and <strong>VLA</strong> models with
+            <strong>failure-aware control strategies</strong> for reliable real-world operation.
+            </p>
           </p>
 
           <p>
-            Secondo paragrafo: focus di ricerca, metodi, temi, e cosa ti interessa studiare.
-            Manteniamo la larghezza controllata per un effetto “pagina” pulito.
+            During my Master’s studies in <strong>Artificial Intelligence and Robotics</strong> at
+            <a href="https://www.uniroma1.it/" target="_blank" rel="noopener">Sapienza University of Rome</a>,
+            which I completed <strong>with honors</strong>, I carried out my thesis in collaboration with
+            <a href="https://www.leonardo.com/" target="_blank" rel="noopener"><strong>Leonardo S.p.A.</strong></a>,
+            under the academic supervision of
+            <a href="https://www.diag.uniroma1.it/oriolo/" target="_blank" rel="noopener"><strong>Prof. Giuseppe Oriolo</strong></a>
+            and the industrial supervision of
+            <a href="https://scholar.google.com/citations?user=sII1ptQAAAAJ&hl=en" target="_blank" rel="noopener"><strong>Dr. Navvab Kashiri</strong></a>.
+            My thesis, <em>“Learning Distance Functions for Robot Obstacle Avoidance”</em>, investigated
+            <strong>data-driven distance representations</strong>, comparing neural and geometric approaches in
+            <strong>mobile manipulation</strong> scenarios.
           </p>
 
-          <p>
-            Terzo paragrafo (opzionale): percorso, attività, community, ecc.
+          <p class="interests-line">
+            Research interests: <strong>foundation models for robotics</strong>, <strong>vision–language–action learning</strong>,
+            <strong>embodied AI</strong>, <strong>robust robot autonomy</strong>, <strong>failure-aware systems</strong>.
           </p>
         </div>
 
-        <!-- Interests + Education (come nel reference) -->
+        <!-- Education + Experience -->
         <div class="two-grid">
-          <div class="block">
-            <h2 class="block__title">Interests</h2>
-            <ul class="bullet">
-              <li>Behaviour Change</li>
-              <li>Informed Decision Making</li>
-              <li>Health Promotion</li>
-              <li>Digital Health & Interventions</li>
-              <li>Diversity, Inclusion & Inclusive Methods</li>
-            </ul>
-          </div>
-
+          <!-- EDUCATION -->
           <div class="block">
             <h2 class="block__title">Education</h2>
-
-            <!-- Icone stile reference (graduation cap) -->
             <ul class="timeline">
               <li class="timeline__item">
                 <div class="timeline__icon" aria-hidden="true">
+                  <!-- graduation cap -->
                   <svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm-7 9.09V16c0 1.66 3.13 3 7 3s7-1.34 7-3v-3.91l-7 3.82-7-3.82Z"/></svg>
                 </div>
                 <div class="timeline__body">
-                  <div class="timeline__title">PhD in …, 2022</div>
-                  <div class="timeline__meta">Maastricht University</div>
+                  <!-- <div class="timeline__title">Ph.D. in Robotics and Intelligent Machines — 2025–Present</div>
+                  <div class="timeline__meta">Italian Institute of Technology (IIT), Genoa</div> -->
+                  <div class="timeline__title">Ph.D. in Robotics and Intelligent Machines</div>
+                <div class="timeline__meta">Italian Institute of Technology (IIT), Genoa</div>
+                <div class="timeline__date">Nov. 2025–Present</div>
                 </div>
               </li>
 
@@ -120,8 +141,9 @@
                   <svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm-7 9.09V16c0 1.66 3.13 3 7 3s7-1.34 7-3v-3.91l-7 3.82-7-3.82Z"/></svg>
                 </div>
                 <div class="timeline__body">
-                  <div class="timeline__title">MSc in …, 2017</div>
-                  <div class="timeline__meta">Maastricht University</div>
+                  <div class="timeline__title">MSc in Artificial Intelligence and Robotics</div>
+                  <div class="timeline__meta">Sapienza University of Rome, Rome</div>
+                  <div class="timeline__date">Sept. 2023– Oct. 2025</div>
                 </div>
               </li>
 
@@ -130,8 +152,60 @@
                   <svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm-7 9.09V16c0 1.66 3.13 3 7 3s7-1.34 7-3v-3.91l-7 3.82-7-3.82Z"/></svg>
                 </div>
                 <div class="timeline__body">
-                  <div class="timeline__title">BSc in …, 2014</div>
-                  <div class="timeline__meta">Catholic University …</div>
+                  <div class="timeline__title">BSc in Applied Computer Science and Artificial Intelligence</div>
+                  <div class="timeline__meta">Sapienza University of Rome, Rome</div>
+                  <div class="timeline__date">Sept. 2020– Oct. 2023</div>
+                </div>
+              </li>
+
+              <li class="timeline__item">
+                <div class="timeline__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm-7 9.09V16c0 1.66 3.13 3 7 3s7-1.34 7-3v-3.91l-7 3.82-7-3.82Z"/></svg>
+                </div>
+                <div class="timeline__body">
+                  <div class="timeline__title">Scientific High School Diploma</div>
+                  <div class="timeline__meta">I.I.S. “Galilei Vetrone”, Benevento</div>
+                  <div class="timeline__date">Sept. 2015– July 2020</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- EXPERIENCE -->
+          <div class="block">
+            <h2 class="block__title">Experience</h2>
+            <ul class="timeline">
+              <li class="timeline__item">
+                <div class="timeline__icon" aria-hidden="true">
+                  <!-- briefcase -->
+                  <svg viewBox="0 0 24 24"><path d="M10 2h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v3H0V8a2 2 0 0 1 2-2h4V4a2 2 0 0 1 2-2Zm4 4V4h-4v2h4ZM0 13h10v2H0v-2Zm12 0h12v2H12v-2Zm-12 4h24v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-3Z"/></svg>
+                </div>
+                <div class="timeline__body">
+                  <div class="timeline__title">Ph.D. Researcher</div>
+                  <div class="timeline__meta">Italian Institute of Technology (IIT), Genoa</div>
+                  <div class="timeline__date">Nov. 2025– Present</div>
+                </div>
+              </li>
+
+              <li class="timeline__item">
+                <div class="timeline__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M10 2h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v3H0V8a2 2 0 0 1 2-2h4V4a2 2 0 0 1 2-2Zm4 4V4h-4v2h4ZM0 13h10v2H0v-2Zm12 0h12v2H12v-2Zm-12 4h24v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-3Z"/></svg>
+                </div>
+                <div class="timeline__body">
+                  <div class="timeline__title">Robotics Research Internship</div>
+                  <div class="timeline__meta">Leonardo S.p.A., Genoa</div>
+                  <div class="timeline__date">Apr. 2025– Oct. 2025</div>
+                </div>
+              </li>
+
+              <li class="timeline__item">
+                <div class="timeline__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M10 2h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v3H0V8a2 2 0 0 1 2-2h4V4a2 2 0 0 1 2-2Zm4 4V4h-4v2h4ZM0 13h10v2H0v-2Zm12 0h12v2H12v-2Zm-12 4h24v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-3Z"/></svg>
+                </div>
+                <div class="timeline__body">
+                  <div class="timeline__title">Computer Vision Research Internship</div>
+                  <div class="timeline__meta">VisionLab, Sapienza University of Rome, Rome</div>
+                  <div class="timeline__date">June. 2023– Oct. 2023</div>
                 </div>
               </li>
             </ul>
@@ -141,103 +215,26 @@
       </div>
     </section>
 
-    <!-- TEACHING (colonna sinistra VUOTA, colonna destra con contenuto) -->
-    <!-- <section id="teaching" class="row row--band">
-      <div class="left spacer" aria-hidden="true"></div>
-
-      <div class="right">
-        <h2 class="section-title">Teaching</h2>
-
-        <div class="prose">
-          <p>
-            Inserisci qui una descrizione breve (come nel reference) e poi un elenco puntato.
-          </p>
-        </div>
-
-        <ul class="bullet">
-          <li>Development, implementation, and evaluation of interventions</li>
-          <li>Health promotion</li>
-          <li>Behaviour (change) theories</li>
-          <li>Self-regulation</li>
-          <li>Research methods</li>
-          <li>Anxiety disorders</li>
-          <li>Thesis supervision</li>
-        </ul>
-
-        <div class="prose">
-          <p>
-            In 2021, I obtained my Basic Teaching Qualification (UTQ).
-          </p>
-        </div>
-      </div>
-    </section> -->
-
-
+    <!-- TEACHING -->
     <section id="teaching" class="row row--band">
-    <div class="left section-head">
+      <div class="left section-head">
         <h2 class="section-title">Teaching</h2>
-    </div>
+      </div>
 
-    <div class="right">
+      <div class="right">
         <div class="prose">
-        <p>
-            Inserisci qui una descrizione breve (come nel reference) e poi un elenco puntato.
-        </p>
+          <p>
+            Inserisci qui una descrizione breve e poi un elenco puntato.
+          </p>
         </div>
 
         <ul class="bullet">
-        <li>Development, implementation, and evaluation of interventions</li>
-        <li>Health promotion</li>
-        <li>Behaviour (change) theories</li>
-        <li>Self-regulation</li>
-        <li>Research methods</li>
-        <li>Anxiety disorders</li>
-        <li>Thesis supervision</li>
-        </ul>
-
-        <div class="prose">
-        <p>
-            In 2021, I obtained my Basic Teaching Qualification (UTQ).
-        </p>
-        </div>
-    </div>
-    </section>
-
-
-    <!-- EXPERIENCE (colonna sinistra VUOTA, contenuto a destra) -->
-    <section id="experience" class="row">
-      <div class="left spacer" aria-hidden="true"></div>
-
-      <div class="right">
-        <h2 class="section-title">Experience</h2>
-
-        <ul class="timeline timeline--big">
-          <li class="timeline__item">
-            <div class="timeline__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M10 2h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v3H0V8a2 2 0 0 1 2-2h4V4a2 2 0 0 1 2-2Zm4 4V4h-4v2h4ZM0 13h10v2H0v-2Zm12 0h12v2H12v-2Zm-12 4h24v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-3Z"/></svg>
-            </div>
-            <div class="timeline__body">
-              <div class="timeline__title">Ruolo / Posizione — 2025–Present</div>
-              <div class="timeline__meta">Ente / Lab / Azienda</div>
-              <div class="timeline__desc">1–2 frasi su cosa fai.</div>
-            </div>
-          </li>
-
-          <li class="timeline__item">
-            <div class="timeline__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M10 2h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v3H0V8a2 2 0 0 1 2-2h4V4a2 2 0 0 1 2-2Zm4 4V4h-4v2h4ZM0 13h10v2H0v-2Zm12 0h12v2H12v-2Zm-12 4h24v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-3Z"/></svg>
-            </div>
-            <div class="timeline__body">
-              <div class="timeline__title">Ruolo / Posizione — 2023–2025</div>
-              <div class="timeline__meta">Ente / Lab / Azienda</div>
-              <div class="timeline__desc">1 frase breve.</div>
-            </div>
-          </li>
+          <li>...</li>
         </ul>
       </div>
     </section>
 
-    <!-- PUBLICATIONS (colonna sinistra VUOTA, contenuto a destra) -->
+    <!-- PUBLICATIONS -->
     <section id="publications" class="row">
       <div class="left spacer" aria-hidden="true"></div>
 
@@ -257,7 +254,7 @@
       </div>
     </section>
 
-    <!-- TOPICS (colonna sinistra VUOTA, contenuto a destra) -->
+    <!-- TOPICS -->
     <section id="topics" class="row">
       <div class="left spacer" aria-hidden="true"></div>
 
@@ -270,7 +267,7 @@
         </div>
 
         <footer class="footer">
-          <span>© <span id="year"></span> Il tuo Nome</span>
+          <span>© <span id="year"></span> Giuseppina Iannotti</span>
         </footer>
       </div>
     </section>
@@ -280,4 +277,3 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
-
